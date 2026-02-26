@@ -133,3 +133,15 @@ STATIC_URL = 'static/'
 
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = False
+
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
+ALLOWED_HOSTS = [
+    "bad-design.ru",
+    "www.bad-design.ru",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://bad-design.ru",
+    "https://www.bad-design.ru",
+]
