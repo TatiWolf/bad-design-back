@@ -139,9 +139,11 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 ALLOWED_HOSTS = [
     "bad-design.ru",
     "www.bad-design.ru",
+    "127.0.0.1"
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     "https://bad-design.ru",
     "https://www.bad-design.ru",
+    "https://127.0.0.1"
 ]

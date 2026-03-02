@@ -35,3 +35,16 @@ class DarkPattern(models.Model):
     def __str__(self):
         return self.title
     
+    
+class Study(models.Model):
+    author_of_the_article = models.TextField(blank=True)
+    created_year = models.CharField(max_length=255)
+    title = models.CharField(max_length=255)
+    original_title = models.CharField(max_length=255)
+    url = models.URLField()
+    description = models.TextField(blank=True)
+
+    def __str__(self):
+        return self.title
+    
+

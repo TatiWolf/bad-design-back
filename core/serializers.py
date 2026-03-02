@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Catalog, DarkPattern,DarkPattern
+from .models import Catalog, DarkPattern,DarkPattern,Study
 
 class DarkPatternSerializer(serializers.ModelSerializer):
     class Meta:
@@ -96,3 +96,8 @@ class DarkPatternListSerializer(serializers.ModelSerializer):
             "title_another_language_for_list",
             "description_for_list",
         ]
+        
+class StudySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Study
+        fields = "__all__"

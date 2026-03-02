@@ -1,12 +1,13 @@
 from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
-from .models import Catalog, DarkPattern
+from .models import Catalog, DarkPattern, Study
 from .serializers import (
     CatalogSerializer,
     DarkPatternSerializer,
     DarkPatternDetailSerializer,
-    DarkPatternListSerializer
+    DarkPatternListSerializer,
+    StudySerializer
 )
 
 
@@ -45,3 +46,6 @@ class DarkPatternViewSet(viewsets.ModelViewSet):
     serializer_class = DarkPatternSerializer
     
     
+class StudyViewSet(viewsets.ModelViewSet):
+    queryset = Study.objects.all()
+    serializer_class = StudySerializer
