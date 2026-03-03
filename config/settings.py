@@ -147,3 +147,6 @@ CSRF_TRUSTED_ORIGINS = [
     "https://www.bad-design.ru",
     "https://127.0.0.1"
 ]
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
